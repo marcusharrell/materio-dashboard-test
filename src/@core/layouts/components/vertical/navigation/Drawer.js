@@ -1,6 +1,8 @@
 // ** MUI Imports
 import { styled, useTheme } from '@mui/material/styles'
 import MuiSwipeableDrawer from '@mui/material/SwipeableDrawer'
+import { Radius } from 'mdi-material-ui'
+import { border, borders } from '@mui/system'
 
 const SwipeableDrawer = styled(MuiSwipeableDrawer)({
   overflowX: 'hidden',
@@ -49,12 +51,16 @@ const Drawer = props => {
       className='layout-vertical-nav'
       variant={hidden ? 'temporary' : 'permanent'}
       {...(hidden ? { ...MobileDrawerProps } : { ...DesktopDrawerProps })}
-      PaperProps={{ sx: { width: navWidth } }}
+      PaperProps={{
+        elevation: 24,
+        style: { backgroundColor: 'transparent', borderTopRightRadius: 35, borderBottomRightRadius: 35 },
+        sx: { width: navWidth }
+      }}
       sx={{
         width: navWidth,
         '& .MuiDrawer-paper': {
           borderRight: 0,
-          backgroundColor: theme.palette.background.default // <--- navbar drawer color
+          backgroundColor: '#F05656' // <--- navbar drawer color
         }
       }}
     >

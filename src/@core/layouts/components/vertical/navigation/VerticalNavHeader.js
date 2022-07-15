@@ -28,6 +28,7 @@ const HeaderTitle = styled(Typography)(({ theme }) => ({
 }))
 
 const HeaderSubtitle = styled(Typography)(({ theme }) => ({
+  fontSize: 14,
   fontWeight: 100,
   lineHeight: 'normal',
   textTransform: "lowercase",
@@ -55,12 +56,13 @@ const VerticalNavHeader = props => {
       ) : (
         <Link href='/' passHref>
           <StyledLink>
-            <HeaderTitle variant='h5' sx={{ ml: 3 }}>
+            <HeaderTitle variant='h5' sx={{ ml: 4, pt: 1}}>
             {themeConfig.templateName}
-            </HeaderTitle>
-              <HeaderSubtitle sx={{ ml: 3, typography: 'body1'}}>
+            {/* <HeaderSubtitle sx={{ ml: 3}}>
               Inclusive and joyful movement videos for kids and teachers
-              </HeaderSubtitle>
+              </HeaderSubtitle> */}
+            </HeaderTitle>
+             
           </StyledLink>
         </Link>
       )}
