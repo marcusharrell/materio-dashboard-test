@@ -106,10 +106,9 @@ const TabAccount = () => {
             <FormControl fullWidth>
               <InputLabel>Role</InputLabel>
               <Select label='Role' defaultValue='admin'>
-                <MenuItem value='admin'>Admin</MenuItem>
-                <MenuItem value='author'>Author</MenuItem>
-                <MenuItem value='editor'>Editor</MenuItem>
-                <MenuItem value='maintainer'>Maintainer</MenuItem>
+                <MenuItem value='admin'>Teacher</MenuItem>
+                <MenuItem value='author'>Student</MenuItem>
+                <MenuItem value='editor'>Admin</MenuItem>
                 <MenuItem value='subscriber'>Subscriber</MenuItem>
               </Select>
             </FormControl>
