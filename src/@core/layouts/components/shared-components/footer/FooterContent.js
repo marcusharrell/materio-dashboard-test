@@ -9,15 +9,16 @@ const FooterContent = () => {
   const hidden = useMediaQuery(theme => theme.breakpoints.down('md'))
 
   return (
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
+    //  ------------ MIT Copywrite info below Don't delete or the FBI will arrest you. --------------
+    <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between'}}>
       <Typography sx={{ mr: 2 }}>
-        {`© ${new Date().getFullYear()}, Made with `}
+        {`Product Demo made with `}
         <Box component='span' sx={{ color: 'error.main' }}>
           ❤️
         </Box>
         {` by `}
-        <Link target='_blank' href='https://themeselection.com/'>
-          ThemeSelection
+        <Link target='_blank' href='https://github.com/marcusharrell/'>
+          justb team
         </Link>
       </Typography>
       {hidden ? null : (
@@ -26,9 +27,8 @@ const FooterContent = () => {
             target='_blank'
             href='https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free/blob/main/LICENSE'
           >
-            MIT License
           </Link>
-          <Link target='_blank' href='https://themeselection.com/'>
+          {/* <Link target='_blank' href='https://themeselection.com/'>
             More Themes
           </Link>
           <Link
@@ -42,7 +42,7 @@ const FooterContent = () => {
             href='https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free/issues'
           >
             Support
-          </Link>
+          </Link> */}
         </Box>
       )}
     </Box>
