@@ -40,8 +40,8 @@ const TabInfo = () => {
               multiline
               label='Bio'
               minRows={2}
-              placeholder='Bio'
-              defaultValue='The name’s John Deo. I am a tireless seeker of knowledge, occasional purveyor of wisdom and also, coincidentally, a graphic designer. Algolia helps businesses across industries quickly create relevant 😎, scalable 😀, and lightning 😍 fast search and discovery experiences.'
+              placeholder='Enter some information about yourself!'
+              defaultValue=''
             />
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -59,14 +59,6 @@ const TabInfo = () => {
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField fullWidth type='number' label='Phone' placeholder='(123) 456-7890' />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              fullWidth
-              label='Website'
-              placeholder='https://example.com/'
-              defaultValue='https://themeselection.com/'
-            />
           </Grid>
           <Grid item xs={12} sm={6}>
             <FormControl fullWidth>
