@@ -48,7 +48,7 @@ const ResetButtonStyled = styled(Button)(({ theme }) => ({
 const TabAccount = () => {
   // ** State
   const [openAlert, setOpenAlert] = useState(true)
-  const [imgSrc, setImgSrc] = useState('/images/avatars/1.png')
+  const [imgSrc, setImgSrc] = useState('https://i.pravatar.cc/150?img=27')
 
   const onChange = file => {
     const reader = new FileReader()
@@ -88,10 +88,10 @@ const TabAccount = () => {
           </Grid>
 
           <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Username' placeholder='johnDoe' defaultValue='johnDoe' />
+            <TextField fullWidth label='Username' placeholder='johnDoe' defaultValue='Mary' />
           </Grid>
           <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Name' placeholder='John Doe' defaultValue='John Doe' />
+            <TextField fullWidth label='Name' placeholder='John Doe' defaultValue='Wilson' />
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
@@ -99,7 +99,7 @@ const TabAccount = () => {
               type='email'
               label='Email'
               placeholder='johnDoe@example.com'
-              defaultValue='johnDoe@example.com'
+              defaultValue='mwilson.justbelementary.edu'
             />
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -107,9 +107,9 @@ const TabAccount = () => {
               <InputLabel>Role</InputLabel>
               <Select label='Role' defaultValue='admin'>
                 <MenuItem value='admin'>Teacher</MenuItem>
-                <MenuItem value='author'>Student</MenuItem>
-                <MenuItem value='editor'>Admin</MenuItem>
-                <MenuItem value='subscriber'>Subscriber</MenuItem>
+                <MenuItem disabled value='author'>Student</MenuItem>
+                <MenuItem disabled value='editor'>Admin</MenuItem>
+                <MenuItem disabled value='subscriber'>Subscriber</MenuItem>
               </Select>
             </FormControl>
           </Grid>
@@ -124,7 +124,7 @@ const TabAccount = () => {
             </FormControl>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Company' placeholder='ABC Pvt. Ltd.' defaultValue='ABC Pvt. Ltd.' />
+            <TextField fullWidth label='School' placeholder='School Name' defaultValue='Justb Elementary' />
           </Grid>
 
           {openAlert ? (
