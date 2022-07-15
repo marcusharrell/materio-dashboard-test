@@ -10,7 +10,7 @@ const FooterContent = () => {
 
   return (
     //  ------------ MIT Copywrite info below Don't delete or the FBI will arrest you. --------------
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between'}}>
+    <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
       <Typography sx={{ mr: 2 }}>
         {`Product Demo made with `}
         <Box component='span' sx={{ color: 'error.main' }}>
@@ -26,8 +26,7 @@ const FooterContent = () => {
           <Link
             target='_blank'
             href='https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free/blob/main/LICENSE'
-          >
-          </Link>
+          ></Link>
           {/* <Link target='_blank' href='https://themeselection.com/'>
             More Themes
           </Link>
