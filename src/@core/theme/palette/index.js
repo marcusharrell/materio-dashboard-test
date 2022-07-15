@@ -6,17 +6,17 @@ const DefaultPalette = (mode, themeColor) => {
 
   const primaryGradient = () => {
     if (themeColor === 'primary') {
-      return '#C6A7FE'
+      return '#F05656'
     } else if (themeColor === 'secondary') {
-      return '#9C9FA4'
+      return '#FFCC12'
     } else if (themeColor === 'success') {
-      return '#93DD5C'
+      return '#D0D7C1'
     } else if (themeColor === 'error') {
-      return '#FF8C90'
+      return '#32476E'
     } else if (themeColor === 'warning') {
       return '#FFCF5C'
     } else {
-      return '#6ACDFF'
+      return '#A8BDDA'
     }
   }
 
@@ -24,7 +24,7 @@ const DefaultPalette = (mode, themeColor) => {
     customColors: {
       main: mainColor,
       primaryGradient: primaryGradient(),
-      tableHeaderBg: mode === 'light' ? '#F9FAFC' : '#3D3759'
+      tableHeaderBg: mode === 'light' ? '#F9FAFC' : '#F05656'
     },
     common: {
       black: '#000',
@@ -32,9 +32,9 @@ const DefaultPalette = (mode, themeColor) => {
     },
     mode: mode,
     primary: {
-      light: '#9E69FD',
-      main: '#9155FD',
-      dark: '#804BDF',
+      light: '#F05656',
+      main: '#F05656',
+      dark: '#FFCC12',
       contrastText: '#FFF'
     },
     secondary: {
