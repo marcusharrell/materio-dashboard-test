@@ -22,6 +22,12 @@ import WeeklyOverview from 'src/views/dashboard/WeeklyOverview'
 import DepositWithdraw from 'src/views/dashboard/DepositWithdraw'
 import SalesByCountries from 'src/views/dashboard/SalesByCountries'
 
+// ** Other MUI Imports
+import Accordion from '@mui/material/Accordion'
+import AccordionSummary from '@mui/material/AccordionSummary'
+import AccordionDetails from '@mui/material/AccordionDetails'
+import Typography from '@mui/material/Typography'
+
 const Dashboard = () => {
   return (
     <ApexChartWrapper>
@@ -33,10 +39,10 @@ const Dashboard = () => {
           <StatisticsCard />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          <WeeklyOverview />
+          {/* <WeeklyOverview /> */}
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          <TotalEarning />
+          {/* <TotalEarning /> */}
         </Grid>
       </Grid>
     </ApexChartWrapper>

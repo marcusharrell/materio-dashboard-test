@@ -20,6 +20,7 @@ import EyeOutline from 'mdi-material-ui/EyeOutline'
 import KeyOutline from 'mdi-material-ui/KeyOutline'
 import EyeOffOutline from 'mdi-material-ui/EyeOffOutline'
 import LockOpenOutline from 'mdi-material-ui/LockOpenOutline'
+import { auto } from '@popperjs/core'
 
 const TabSecurity = () => {
   // ** States
@@ -160,7 +161,7 @@ const TabSecurity = () => {
             xs={12}
             sx={{ display: 'flex', marginTop: [7.5, 2.5], alignItems: 'center', justifyContent: 'center' }}
           >
-            <img width={183} alt='avatar' height={256} src='/images/pages/pose-m-1.png' />
+            <img width={auto} alt='avatar' height={256} src='/images/pages/illustration1.png' />
           </Grid>
         </Grid>
       </CardContent>

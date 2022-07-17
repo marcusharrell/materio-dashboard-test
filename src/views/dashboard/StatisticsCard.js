@@ -70,7 +70,7 @@ const renderStats = () => {
 
 const StatisticsCard = () => {
   return (
-    <Card>
+    <Card sx={{borderRadius: 4.5}}>
       <CardHeader
         title='Statistics Card'
         action={
@@ -80,7 +80,7 @@ const StatisticsCard = () => {
         }
         subheader={
           <Typography variant='body2'>
-            <Box component='span' sx={{ fontWeight: 600, color: 'text.primary' }}>
+            <Box component='span' sx={{ fontWeight: 600, color: 'text.primary', }}>
               Total 48.5% growth
             </Box>{' '}
             😎 this month
