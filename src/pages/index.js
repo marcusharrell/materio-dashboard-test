@@ -1,5 +1,8 @@
 // ** MUI Imports
 import Grid from '@mui/material/Grid'
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
 
 // ** Icons Imports
 import Poll from 'mdi-material-ui/Poll'
@@ -28,23 +31,22 @@ import AccordionSummary from '@mui/material/AccordionSummary'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import Typography from '@mui/material/Typography'
 
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
 const Dashboard = () => {
   return (
     <ApexChartWrapper>
-      <Grid container spacing={6}>
-        <Grid item xs={12} md={4}>
-          <Trophy />
-        </Grid>
-        <Grid item xs={12} md={8}>
-          <StatisticsCard />
-        </Grid>
-        <Grid item xs={12} md={6} lg={4}>
-          {/* <WeeklyOverview /> */}
-        </Grid>
-        <Grid item xs={12} md={6} lg={4}>
-          {/* <TotalEarning /> */}
-        </Grid>
+     <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+      
       </Grid>
+    </Box>
     </ApexChartWrapper>
   )
 }
