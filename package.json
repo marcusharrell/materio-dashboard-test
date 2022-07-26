@@ -1,5 +1,5 @@
 {
-  "name": "Justb Dashboard Build 1",
+  "name": "justb",
   "description": "1st Dashboard Build for Justb",
   "license": "MIT",
   "version": "1.0.0",
@@ -37,7 +37,7 @@
   ],
   "scripts": {
     "build": "react-scripts build",
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "dev": "next dev",
     "start": "react-scripts start",
@@ -58,6 +58,7 @@
     "clsx": "^1.1.1",
     "eslint-plugin-react": "^7.29.4",
     "mdi-material-ui": "^7.1.0",
+    "netlify-cli": "^10.11.2",
     "next": "12.0.4",
     "nprogress": "^0.2.0",
     "react": "17.0.2",
@@ -65,7 +66,8 @@
     "react-datepicker": "^4.5.0",
     "react-dom": "17.0.2",
     "react-perfect-scrollbar": "^1.5.8",
-    "react-popper": "^2.2.5"
+    "react-popper": "^2.2.5",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
@@ -78,7 +80,4 @@
     "next-transpile-modules": "^9.0.0",
     "prettier": "2.5.1"
   }
-
-  
-
 }

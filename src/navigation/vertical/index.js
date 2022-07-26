@@ -9,19 +9,20 @@ import CreditCardOutline from 'mdi-material-ui/CreditCardOutline'
 import AccountPlusOutline from 'mdi-material-ui/AccountPlusOutline'
 import AlertCircleOutline from 'mdi-material-ui/AlertCircleOutline'
 import GoogleCirclesExtended from 'mdi-material-ui/GoogleCirclesExtended'
+import { ChatQuestion, Television } from 'mdi-material-ui'
 
 const navigation = () => {
   return [
     {
-      title: 'Classes',
-      icon: AlertCircleOutline,
-      path: '/pages/error',
-      openInNewTab: true
-    },
-    {
       title: 'Dashboard',
       icon: HomeOutline,
       path: '/'
+    },
+    {
+      title: 'My Classes',
+      icon: Television,
+      path: '',
+      openInNewTab: true
     },
     {
       title: 'Account Settings',
@@ -30,30 +31,30 @@ const navigation = () => {
     },
     {
       title: 'FAQ',
-      icon: AccountCogOutline,
+      icon: ChatQuestion,
       path: '/account-settings'
     },
-    {
-      sectionTitle: 'Pages'
-    },
-    {
-      title: 'Login',
-      icon: Login,
-      path: '/pages/login',
-      openInNewTab: true
-    },
-    {
-      title: 'Register',
-      icon: AccountPlusOutline,
-      path: '/pages/register',
-      openInNewTab: true
-    },
-    {
-      title: 'Error',
-      icon: AlertCircleOutline,
-      path: '/pages/error',
-      openInNewTab: true
-    },
+    // {
+    //   sectionTitle: 'Pages'
+    // },
+    // {
+    //   title: 'Login',
+    //   icon: Login,
+    //   path: '/pages/login',
+    //   openInNewTab: true
+    // },
+    // {
+    //   title: 'Register',
+    //   icon: AccountPlusOutline,
+    //   path: '/pages/register',
+    //   openInNewTab: true
+    // },
+    // {
+    //   title: 'Error',
+    //   icon: AlertCircleOutline,
+    //   path: '/pages/error',
+    //   openInNewTab: true
+    // },
     
     // {
     //   sectionTitle: 'User Interface'
