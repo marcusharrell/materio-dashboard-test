@@ -18,7 +18,7 @@ const FooterContent = () => {
         </Box>
         {` by `}
         <Link target='_blank' href='https://github.com/marcusharrell/'>
-          justb team
+          Marcus Harrell
         </Link>
       </Typography>
       {hidden ? null : (

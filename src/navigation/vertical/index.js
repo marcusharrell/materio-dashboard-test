@@ -13,12 +13,23 @@ import GoogleCirclesExtended from 'mdi-material-ui/GoogleCirclesExtended'
 const navigation = () => {
   return [
     {
+      title: 'Classes',
+      icon: AlertCircleOutline,
+      path: '/pages/error',
+      openInNewTab: true
+    },
+    {
       title: 'Dashboard',
       icon: HomeOutline,
       path: '/'
     },
     {
       title: 'Account Settings',
+      icon: AccountCogOutline,
+      path: '/account-settings'
+    },
+    {
+      title: 'FAQ',
       icon: AccountCogOutline,
       path: '/account-settings'
     },
@@ -43,34 +54,35 @@ const navigation = () => {
       path: '/pages/error',
       openInNewTab: true
     },
-    {
-      sectionTitle: 'User Interface'
-    },
-    {
-      title: 'Typography',
-      icon: FormatLetterCase,
-      path: '/typography'
-    },
-    {
-      title: 'Icons',
-      path: '/icons',
-      icon: GoogleCirclesExtended
-    },
-    {
-      title: 'Cards',
-      icon: CreditCardOutline,
-      path: '/cards'
-    },
-    {
-      title: 'Tables',
-      icon: Table,
-      path: '/tables'
-    },
-    {
-      icon: CubeOutline,
-      title: 'Form Layouts',
-      path: '/form-layouts'
-    }
+    
+    // {
+    //   sectionTitle: 'User Interface'
+    // },
+    // {
+    //   title: 'Typography',
+    //   icon: FormatLetterCase,
+    //   path: '/typography'
+    // },
+    // {
+    //   title: 'Icons',
+    //   path: '/icons',
+    //   icon: GoogleCirclesExtended
+    // },
+    // {
+    //   title: 'Cards',
+    //   icon: CreditCardOutline,
+    //   path: '/cards'
+    // },
+    // {
+    //   title: 'Tables',
+    //   icon: Table,
+    //   path: '/tables'
+    // },
+    // {
+    //   icon: CubeOutline,
+    //   title: 'Form Layouts',
+    //   path: '/form-layouts'
+    // }
   ]
 }
 

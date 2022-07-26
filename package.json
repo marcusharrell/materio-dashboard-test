@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free.git"
   },
-  "homepage": "https://themeselection.com/products/materio-free-mui-react-nextjs-admin-template/",
+  "homepage": "https://marcusharrell.github.io/materio-dashboard-test/",
   "keywords": [
     "react",
     "javascript",
@@ -36,8 +36,10 @@
     "themeselection"
   ],
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "predoploy": "npm run build",
+    "deploy": "gh-pages -d",
+    "dev": "next dev",
     "start": "next start",
     "export": "next export",
     "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
@@ -72,7 +74,11 @@
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.4",
+    "gh-pages": "^4.0.0",
     "next-transpile-modules": "^9.0.0",
     "prettier": "2.5.1"
   }
+
+  
+
 }

@@ -28,7 +28,7 @@ const CardMembership = () => {
         <Grid item xs={12} sm={7}>
           <CardContent sx={{ padding: theme => `${theme.spacing(3.25, 5.75, 6.25)} !important` }}>
             <Typography variant='h6' sx={{ marginBottom: 3.5 }}>
-              Lifetime Membership
+              Monthly Membership
             </Typography>
             <Typography variant='body2'>
               Here, I focus on a range of items and features that we use in life without giving them a second thought
@@ -46,7 +46,7 @@ const CardMembership = () => {
                   </Box>
                   <Box sx={{ display: 'flex', alignItems: 'center' }}>
                     <AccountOutline sx={{ color: 'primary.main', marginRight: 2.75 }} fontSize='small' />
-                    <Typography variant='body2'>15 Members</Typography>
+                    <Typography variant='body2'>Entire Class</Typography>
                   </Box>
                 </StyledBox>
               </Grid>
@@ -84,13 +84,13 @@ const CardMembership = () => {
               <Box sx={{ mb: 3.5, display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
                 <Typography variant='h6'>$</Typography>
                 <Typography variant='h6' sx={{ lineHeight: 1, fontWeight: 600, fontSize: '3.75rem !important' }}>
-                  899
+                  9.99
                 </Typography>
-                <Typography variant='h6'>USD</Typography>
+                <Typography variant='h6'>USD /Month</Typography>
               </Box>
               <Typography variant='body2' sx={{ mb: 13.75, display: 'flex', flexDirection: 'column' }}>
-                <span>5 Tips For Offshore</span>
-                <span>Software Development</span>
+                <span>Curated Content</span>
+                <span>Cancel Anytime</span>
               </Typography>
               <Button variant='contained'>Contact Now</Button>
             </Box>

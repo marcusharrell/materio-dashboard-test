@@ -7,7 +7,7 @@ import CurrencyUsd from 'mdi-material-ui/CurrencyUsd'
 import HelpCircleOutline from 'mdi-material-ui/HelpCircleOutline'
 import BriefcaseVariantOutline from 'mdi-material-ui/BriefcaseVariantOutline'
 
-// ** Custom Components Imports
+// ** Custom Components Import
 import CardStatisticsVerticalComponent from 'src/@core/components/card-statistics/card-stats-vertical'
 
 // ** Styled Component Import
@@ -21,29 +21,35 @@ import StatisticsCard from 'src/views/dashboard/StatisticsCard'
 import WeeklyOverview from 'src/views/dashboard/WeeklyOverview'
 import DepositWithdraw from 'src/views/dashboard/DepositWithdraw'
 import SalesByCountries from 'src/views/dashboard/SalesByCountries'
+import CardSupport from 'src/views/cards/CardSupport'
+import CardMembership from 'src/views/cards/CardMembership'
+import CardNavigationCenter from 'src/views/cards/CardNavigationCenter'
+import CardFacebook from 'src/views/cards/CardFacebook'
 
 // ** Other MUI Imports
 import Accordion from '@mui/material/Accordion'
 import AccordionSummary from '@mui/material/AccordionSummary'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import Typography from '@mui/material/Typography'
+import Button from 'src/@core/theme/overrides/button'
 
 const Dashboard = () => {
   return (
     <ApexChartWrapper>
+    
       <Grid container spacing={6}>
-        <Grid item xs={12} md={4}>
-          
-        </Grid>
-        <Grid item xs={12} md={8}>
-        
+        <Grid item xs={12} md={3}>
+          <Trophy />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          {/* <WeeklyOverview /> */}
+          <WeeklyOverview />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          {/* <TotalEarning /> */}
+          <TotalEarning />
         </Grid>
+        <Grid item xs={12} md={6} lg={6}>
+          {/* <CardMembership /> */}
+          </Grid>
       </Grid>
     </ApexChartWrapper>
   )

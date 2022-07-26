@@ -130,10 +130,10 @@ const NotificationDropdown = () => {
         <ScrollWrapper>
           <MenuItem onClick={handleDropdownClose}>
             <Box sx={{ width: '100%', display: 'flex', alignItems: 'center' }}>
-              <Avatar alt='Flora' src='/images/avatars/4.png' />
+              <Avatar alt='Flora' src='https://i.pravatar.cc/150?img=27' />
               <Box sx={{ mx: 4, flex: '1 1', display: 'flex', overflow: 'hidden', flexDirection: 'column' }}>
-                <MenuItemTitle>Congratulation Flora! 🎉</MenuItemTitle>
-                <MenuItemSubtitle variant='body2'>Won the monthly best seller badge</MenuItemSubtitle>
+                <MenuItemTitle>Congratulation Mary! 🎉</MenuItemTitle>
+                <MenuItemSubtitle variant='body2'>Most classes watched this month!</MenuItemSubtitle>
               </Box>
               <Typography variant='caption' sx={{ color: 'text.disabled' }}>
                 Today
@@ -164,7 +164,7 @@ const NotificationDropdown = () => {
               </Typography>
             </Box>
           </MenuItem>
-          <MenuItem onClick={handleDropdownClose}>
+          {/* <MenuItem onClick={handleDropdownClose}>
             <Box sx={{ width: '100%', display: 'flex', alignItems: 'center' }}>
               <img width={38} height={38} alt='paypal' src='/images/misc/paypal.png' />
               <Box sx={{ mx: 4, flex: '1 1', display: 'flex', overflow: 'hidden', flexDirection: 'column' }}>
@@ -175,8 +175,8 @@ const NotificationDropdown = () => {
                 25 May
               </Typography>
             </Box>
-          </MenuItem>
-          <MenuItem onClick={handleDropdownClose}>
+          </MenuItem> */}
+          {/* <MenuItem onClick={handleDropdownClose}>
             <Box sx={{ width: '100%', display: 'flex', alignItems: 'center' }}>
               <Avatar alt='order' src='/images/avatars/3.png' />
               <Box sx={{ mx: 4, flex: '1 1', display: 'flex', overflow: 'hidden', flexDirection: 'column' }}>
@@ -187,12 +187,12 @@ const NotificationDropdown = () => {
                 19 Mar
               </Typography>
             </Box>
-          </MenuItem>
+          </MenuItem> */}
           <MenuItem onClick={handleDropdownClose}>
             <Box sx={{ width: '100%', display: 'flex', alignItems: 'center' }}>
               <img width={38} height={38} alt='chart' src='/images/misc/chart.png' />
               <Box sx={{ mx: 4, flex: '1 1', display: 'flex', overflow: 'hidden', flexDirection: 'column' }}>
-                <MenuItemTitle>Finance report has been generated</MenuItemTitle>
+                <MenuItemTitle>New Weekly Stats Available!</MenuItemTitle>
                 <MenuItemSubtitle variant='body2'>25 hrs ago</MenuItemSubtitle>
               </Box>
               <Typography variant='caption' sx={{ color: 'text.disabled' }}>
