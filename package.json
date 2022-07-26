@@ -1,11 +1,11 @@
 {
-  "name": "materio-mui-react-nextjs-admin-template-free",
-  "description": "Most Powerful & Comprehensive Free MUI React NextJS Admin Dashboard Template built for developers! 🚀",
+  "name": "Justb Dashboard Build 1",
+  "description": "1st Dashboard Build for Justb",
   "license": "MIT",
   "version": "1.0.0",
   "author": {
-    "name": "ThemeSelection",
-    "url": "https://themeselection.com/"
+    "name": "Marcus Harrell",
+    "url": "https://marcusharrell.github.io"
   },
   "bugs": {
     "url": "https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free/issues"
@@ -36,11 +36,11 @@
     "themeselection"
   ],
   "scripts": {
-    "build": "next build",
+    "build": "react-scripts build",
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
-    "start": "next start",
+    "start": "react-scripts start",
     "export": "next export",
     "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
     "format": "prettier --write \"src/**/*.{js,jsx}\""
