@@ -5,9 +5,11 @@ import Link from 'next/link'
 import Box from '@mui/material/Box'
 import { styled, useTheme } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
+import UserDropdown from '../../shared-components/UserDropdown'
 
 // ** Configs
 import themeConfig from 'src/configs/themeConfig'
+import { right } from '@popperjs/core'
 
 // ** Styled Components
 const MenuHeaderWrapper = styled(Box)(({ theme }) => ({
@@ -22,7 +24,7 @@ const MenuHeaderWrapper = styled(Box)(({ theme }) => ({
 const HeaderTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
   lineHeight: 'normal',
-  textTransform: 'lowercase',
+  textTransform: '',
   color: theme.palette.text.primary,
   transition: 'opacity .25s ease-in-out, margin .25s ease-in-out'
 }))
@@ -51,20 +53,17 @@ const VerticalNavHeader = props => {
 
   return (
     <MenuHeaderWrapper className='nav-header' sx={{ pl: 6 }}>
+       <UserDropdown/>
       {userVerticalNavMenuBranding ? (
         userVerticalNavMenuBranding(props)
       ) : (
-        <Link href='/' passHref>
-          <StyledLink>
             <HeaderTitle variant='h5' sx={{ ml: 4, pt: 1}}>
-            {themeConfig.templateName}
+            Welcome, Ms.Wilson
+           
             {/* <HeaderSubtitle sx={{ ml: 3}}>
               Inclusive and joyful movement videos for kids and teachers
               </HeaderSubtitle> */}
-            </HeaderTitle>
-             
-          </StyledLink>
-        </Link>
+            </HeaderTitle >
       )}
     </MenuHeaderWrapper>
   )
