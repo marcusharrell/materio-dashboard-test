@@ -57,8 +57,8 @@ const VerticalNavHeader = props => {
       {userVerticalNavMenuBranding ? (
         userVerticalNavMenuBranding(props)
       ) : (
-            <HeaderTitle variant='h5' sx={{ ml: 4, pt: 1}}>
-            Welcome, Ms.Wilson
+            <HeaderTitle variant='h5' sx={{ mr: 20, pt: 1}}>
+            Welcome, Ms.Wilson {/* Will display name of teacher or user */}
            
             {/* <HeaderSubtitle sx={{ ml: 3}}>
               Inclusive and joyful movement videos for kids and teachers

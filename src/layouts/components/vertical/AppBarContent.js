@@ -23,7 +23,7 @@ const AppBarContent = props => {
 
   return (
     <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-      <Box className='actions-left' sx={{ mr: 2, display: 'flex', alignItems: 'center' }}>
+      <Box className='actions-left' sx={{ mr: 2, display: 'flex', alignItems: 'center', witdh: 'auto'}}>
         {hidden ? (
           <IconButton
             color='inherit'
@@ -35,7 +35,7 @@ const AppBarContent = props => {
         ) : null}
         <TextField
           size='small'
-          sx={{ '& .MuiOutlinedInput-root': { borderRadius: 4 } }}
+          sx={{ '& .MuiOutlinedInput-root': { borderRadius: 4} }}
           InputProps={{
             startAdornment: (
               <InputAdornment position='start'>
