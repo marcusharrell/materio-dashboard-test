@@ -17,7 +17,7 @@ import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import Table from 'src/views/dashboard/Table'
 import Trophy from 'src/views/dashboard/Trophy'
 import TotalEarning from 'src/views/dashboard/TotalEarning'
-import StatisticsCard from 'src/views/dashboard/StatisticsCard'
+import MainContainerCard from 'src/views/dashboard/MainContainerCard'
 import WeeklyOverview from 'src/views/dashboard/WeeklyOverview'
 import DepositWithdraw from 'src/views/dashboard/DepositWithdraw'
 import SalesByCountries from 'src/views/dashboard/SalesByCountries'
@@ -38,17 +38,17 @@ const Dashboard = () => {
     <ApexChartWrapper>
     
       <Grid container spacing={6}>
-        <Grid item xs={12} md={3}>
-          <Trophy />
+        <Grid item xs={12} md={6}>
+          <MainContainerCard />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          <WeeklyOverview />
+         
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          <TotalEarning />
+          
         </Grid>
         <Grid item xs={12} md={6} lg={6}>
-          {/* <CardMembership /> */}
+          
           </Grid>
       </Grid>
     </ApexChartWrapper>
