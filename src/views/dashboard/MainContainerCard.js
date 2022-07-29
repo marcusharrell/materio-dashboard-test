@@ -17,9 +17,13 @@ import CardContent from '@mui/material/CardContent'
 
 const MainContainerCard = () => {
   const [mood, setMood] = React.useState('');
-
+  const [length, setLength] = React.useState('');
   const handleChange = (event) => {
     setMood(event.target.value);
+  
+  }
+  const handleLength = (event) => {
+    setLength(event.target.value);
   }
 
   return (
@@ -27,7 +31,7 @@ const MainContainerCard = () => {
       <CardHeader></CardHeader>
       <CardContent sx={{ pt: theme => `${theme.spacing(3)} !important` }}>
       <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
+      <FormControl>
         <InputLabel id="demo-simple-select-label">Mood</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -39,6 +43,20 @@ const MainContainerCard = () => {
           <MenuItem value={10}>Calm</MenuItem>
           <MenuItem value={20}>Relax</MenuItem>
           <MenuItem value={30}>Release</MenuItem>
+        </Select>
+      </FormControl>
+      <FormControl>
+        <InputLabel id="length-label">Class Length</InputLabel>
+        <Select
+          labelId="length-label"
+          id="length-select"
+          value={length}
+          label="Length"
+          onChange={handleLength}
+        >
+          <MenuItem value={10}>1-5 Minutes</MenuItem>
+          <MenuItem value={20}>5-15 Minutes</MenuItem>
+          <MenuItem value={30}>15-30 Mintues</MenuItem>
         </Select>
       </FormControl>
     </Box>
